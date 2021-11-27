@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="bodypart">
+    <div class="container">
+    <form onsubmit="foo(); return false;">
+        <label class="lab">First Name</label><br>
+        <input type="text" id="fname" style="margin-bottom: 10px;" required><br>
+        <label class="lab">Last Name</label><br>
+        <input type="text" id="lname" style="margin-bottom: 10px;" required><br>
+        <label class="lab">Address</label><br>
+        <input type="text" id="addr" style="margin-bottom: 10px; padding: 20px 50px;" required><br>
+        <label class="lab">Pincode</label><br>
+        <input type="text" id="pin" style="margin-bottom: 10px;"  required><br>
+        <label class="lab" >Gender</label><br>
+        <select id="gender" style="margin-bottom: 10px;" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="transgender">Transgender</option>
+            </select><br>
+        <label class="lab">Food</label><br>
+        <select id="food" required size="5" multiple="multiple" style="margin-bottom: 10px;">
+            <option value="puri">Puri</option>
+            <option value="pongal">Pongal</option>
+            <option value="idly">Idly</option>
+            <option value="dosa">Dosa</option>
+            <option value="vada">Vada</option>
+        </select><br>
+        <label class="lab">State</label><br>
+        <input type="text" id="state" style="margin-bottom: 10px;" required><br>
+        <label class="lab">Country</label><br>
+        <input type="text" id="country" style="margin-bottom: 10px;" required><br>
+        <button class="button">SUBMIT</button>
+        <input type="reset" class="button" value="CLEAR">
+
+    </form>
+    <table id="tab">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Pincode</th>
+            <th>Gender</th>
+            <th>Food</th>
+            <th>State</th>
+            <th>Country</th>
+        </tr>
+    </table>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
